@@ -40,12 +40,8 @@ nav a:hover{color:var(--ink)}
 .hero p{max-width:52ch;margin:0 0 24px}
 .btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:1px solid var(--accent);margin:0 8px 8px 0}
 .btn.primary{background:var(--accent);color:var(--accent-ink)}
-.ledger{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
-.ledger h2{font-size:1rem;color:var(--muted);font-weight:600;margin-bottom:10px}
-.ledger ul{list-style:none;margin:0;padding:0}
-.ledger li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:.95rem}
-.ledger li:first-child{border-top:0}
-.ledger b{color:var(--mark);font-weight:600;white-space:nowrap}
+.photo{margin:0;justify-self:center;width:100%;max-width:380px}
+.photo img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:1px solid var(--line)}
 section{padding:48px 0;border-top:1px solid var(--line)}
 section>.wrap>h2{font-size:1.8rem;margin-bottom:22px}
 .cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
@@ -88,18 +84,12 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
       <h1>Jari Narciso</h1>
       <p class="role">Analista de Testes e Qualidade · Gerente Financeiro</p>
       <p>Garanto que o software funciona antes de chegar ao usuário e mantenho o caixa da empresa em ordem, com planilhas e painéis que mostram a situação financeira de forma clara.</p>
-      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn primary" href="curriculo-jari-narciso.pdf" download="Curriculo-Jari-Narciso.pdf">Baixar currículo</a>
       <a class="btn" href="#contato">Falar comigo</a>
     </div>
-    <aside class="ledger" aria-label="Resumo">
-      <h2>Conferência do dia</h2>
-      <ul>
-        <li><span>Casos de teste executados</span><b>✓</span></b></li>
-        <li><span>Defeitos registrados e acompanhados</span><b>✓</b></li>
-        <li><span>Fluxo de caixa conciliado</span><b>✓</b></li>
-        <li><span>Painel financeiro atualizado</span><b>✓</b></li>
-      </ul>
-    </aside>
+    <figure class="photo">
+      <img src="foto.jpg" alt="Foto de Jari Narciso" width="380" height="380">
+    </figure>
   </div>
 
   <section id="sobre">
@@ -214,7 +204,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);f
     <div class="wrap">
       <h2>Contato</h2>
       <p>O jeito mais rápido de falar comigo é por e-mail ou LinkedIn.</p>
-      <a class="btn primary" href="mailto:jari.almeida@gmailcom">jari.almeida@gmail.com</a>
+      <a class="btn primary" href="mailto:jari.almeida@gmail.com">jari.almeida@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/jari-narciso/">LinkedIn</a>
       <a class="btn" href="https://github.com/jarinarciso/">GitHub</a>
     </div>
