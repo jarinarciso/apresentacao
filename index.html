@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Seu Nome] | Qualidade de Software e Finanças</title>
+<meta name="description" content="[Seu Nome], analista de testes e qualidade e gerente financeiro. Testes de software, fluxo de caixa e painéis financeiros.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6F8; --surface:#FFFFFF; --ink:#14202B; --muted:#52606D;
+  --line:#D5DDE3; --accent:#0F6B6B; --accent-ink:#FFFFFF; --mark:#B7791F;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10181F; --surface:#17222B; --ink:#E8EEF3; --muted:#9AA8B5;
+    --line:#2A3945; --accent:#4FC3BD; --accent-ink:#06201F; --mark:#E0B04F;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--mark);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.brand{font:700 1.1rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 48px;display:grid;gap:40px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,3.8rem);letter-spacing:-.02em}
+.hero .role{font-size:1.15rem;color:var(--muted);margin:14px 0 18px}
+.hero p{max-width:52ch;margin:0 0 24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:1px solid var(--accent);margin:0 8px 8px 0}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.ledger{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.ledger h2{font-size:1rem;color:var(--muted);font-weight:600;margin-bottom:10px}
+.ledger ul{list-style:none;margin:0;padding:0}
+.ledger li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:.95rem}
+.ledger li:first-child{border-top:0}
+.ledger b{color:var(--mark);font-weight:600;white-space:nowrap}
+section{padding:48px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.8rem;margin-bottom:22px}
+.cols{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
+.box h3{font-size:1.15rem;margin-bottom:8px}
+.box p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding:0;list-style:none}
+.tags li{font-size:.82rem;padding:2px 10px;border:1px solid var(--line);border-radius:99px;color:var(--muted)}
+.job{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;padding:16px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0}
+.job time{color:var(--muted);font-size:.92rem}
+.job h3{font-size:1.1rem}
+.job p{margin:4px 0 0;color:var(--muted)}
+.ph{background:color-mix(in srgb,var(--mark) 22%,transparent);padding:0 4px;border-radius:3px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:720px){
+  .hero{grid-template-columns:1fr;padding-top:40px}
+  .job{grid-template-columns:1fr}
+  nav{gap:12px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#inicio">[Seu Nome]</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap hero">
+    <div>
+      <h1>[Seu Nome]</h1>
+      <p class="role">Analista de Testes e Qualidade · Gerente Financeiro</p>
+      <p>Garanto que o software funciona antes de chegar ao usuário e mantenho o caixa da empresa em ordem, com planilhas e painéis que mostram a situação financeira de forma clara.</p>
+      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn" href="#contato">Falar comigo</a>
+    </div>
+    <aside class="ledger" aria-label="Resumo">
+      <h2>Conferência do dia</h2>
+      <ul>
+        <li><span>Casos de teste executados</span><b>✓ <span class="ph">[nº]</span></b></li>
+        <li><span>Defeitos registrados e acompanhados</span><b>✓</b></li>
+        <li><span>Fluxo de caixa conciliado</span><b>✓</b></li>
+        <li><span>Painel financeiro atualizado</span><b>✓</b></li>
+      </ul>
+    </aside>
+  </div>
+
+  <section id="sobre">
+    <div class="wrap">
+      <h2>Sobre</h2>
+      <p style="max-width:68ch">Trabalho em duas frentes: na qualidade de software, planejo e executo testes, registro defeitos e acompanho as correções; nas finanças, gerencio o fluxo de caixa da empresa em planilhas do Google Planilhas, com controle diário e anual. <span class="ph">[Conte aqui há quanto tempo atua, sua formação e o que mais gosta no trabalho.]</span></p>
+    </div>
+  </section>
+
+  <section id="atuacao">
+    <div class="wrap">
+      <h2>Atuação</h2>
+      <div class="cols">
+        <div class="box">
+          <h3>Testes e qualidade</h3>
+          <p>Planejamento de testes, casos de teste, execução manual e registro de defeitos.</p>
+          <ul class="tags"><li>Casos de teste</li><li>Testes funcionais</li><li class="ph">[ferramenta]</li></ul>
+        </div>
+        <div class="box">
+          <h3>Gestão financeira</h3>
+          <p>Fluxo de caixa diário e anual, conciliação entre bancos e acompanhamento de entradas e saídas.</p>
+          <ul class="tags"><li>Fluxo de caixa</li><li>Google Planilhas</li><li>Conciliação bancária</li></ul>
+        </div>
+        <div class="box">
+          <h3>Painéis e planilhas</h3>
+          <p>Dashboards que resumem os números e ajudam a decidir mais rápido.</p>
+          <ul class="tags"><li>Dashboards</li><li>Fórmulas</li><li>Layout de planilhas</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="wrap">
+      <h2>Projetos</h2>
+      <div class="cols">
+        <div class="box">
+          <h3>Painel de fluxo de caixa</h3>
+          <p>Planilhas diária e anual com painéis de entradas, saídas e saldo por banco. <span class="ph">[Descreva o resultado, ex.: tempo economizado.]</span></p>
+          <ul class="tags"><li>Google Planilhas</li><li>Dashboard</li></ul>
+        </div>
+        <div class="box">
+          <h3><span class="ph">[Projeto de testes]</span></h3>
+          <p><span class="ph">[Descreva o sistema testado, o que você cobriu e o que encontrou.]</span></p>
+          <ul class="tags"><li class="ph">[tecnologia]</li></ul>
+        </div>
+        <div class="box">
+          <h3><span class="ph">[Outro projeto]</span></h3>
+          <p><span class="ph">[Descrição curta. Se tiver, link para o repositório.]</span></p>
+          <ul class="tags"><li class="ph">[tecnologia]</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="wrap">
+      <h2>Experiência</h2>
+      <div class="job">
+        <time class="ph">[início] – atual</time>
+        <div>
+          <h3>Analista de Testes e Qualidade · Gerente Financeiro</h3>
+          <p><span class="ph">[Nome da empresa]</span>. Testes de software e gestão do fluxo de caixa.</p>
+        </div>
+      </div>
+      <div class="job">
+        <time class="ph">[período]</time>
+        <div>
+          <h3 class="ph">[Cargo anterior]</h3>
+          <p class="ph">[Empresa e principais entregas]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <h2>Contato</h2>
+      <p>O jeito mais rápido de falar comigo é por e-mail ou LinkedIn.</p>
+      <a class="btn primary" href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/seu-perfil/">LinkedIn</a>
+      <a class="btn" href="https://github.com/jarinarciso/">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 [Seu Nome]</div>
+</footer>
+</body>
+</html>
